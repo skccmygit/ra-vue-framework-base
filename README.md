@@ -1,56 +1,56 @@
-# UI Framework for Vue-based Web Applications
+# Vue 기반 웹 애플리케이션을 위한 UI 프레임워크
 
-## Overview
-With the modern shift in web service architecture, many systems now leverage REST APIs provided by the backend while implementing reactive frameworks on the frontend. This separation of frontend and backend components calls for an independent UI framework capable of handling common web service concerns, which is essential in a decoupled service environment. 
+## 개요
+현대적인 웹 서비스 아키텍처의 변화에 따라 많은 시스템이 백엔드에서 제공하는 REST API를 활용하면서 프론트엔드는 리액티브 프레임워크를 구현하는 방식으로 분리되고 있습니다. 이러한 프론트엔드와 백엔드 컴포넌트의 분리는 독립적인 UI 프레임워크의 필요성을 제기하며, 이는 분리된 서비스 환경에서 필수적입니다.
 
-This UI framework is designed to support frontend application development across various services by utilizing a minimal set of BFF (Backend For Frontend) APIs. The goal is to offer the necessary tools and environment for developing versatile frontend UI applications.
+이 UI 프레임워크는 최소한의 BFF (Backend For Frontend) API를 활용하여 다양한 서비스의 프론트엔드 애플리케이션 개발을 지원하도록 설계되었습니다. 목표는 다재다능한 프론트엔드 UI 애플리케이션 개발을 위한 필수 도구와 환경을 제공하는 것입니다.
 
-## UI Framework Refactoring for Reusability
+## 재사용성을 위한 UI 프레임워크 리팩토링
 
-In response to every UI design changes, the UI framework has undergone a refactoring process. This approach allows for structural reusability while adapting to updated design requirements by modifying common components.
-- **Bootstrap Styling**: All component styles now use Bootstrap, ensuring consistent styling across components and simplifying the design adjustment process.
-- **Vue Component Conversion**: To enhance reusability, core UI elements have been converted into Vue components, allowing for modular use across different parts of the application.
+UI 디자인이 변경될 때마다 재사용성을 강화하기 위해 UI 프레임워크는 리팩토링 과정을 거쳤습니다. 이를 통해 공통 컴포넌트를 수정하여 새로운 디자인 요구사항에 적응하면서도 구조적 재사용이 가능하도록 하였습니다.
+- **부트스트랩 스타일링**: 모든 컴포넌트 스타일은 이제 부트스트랩을 사용하며, 이를 통해 컴포넌트 간 일관된 스타일을 유지하고 디자인 조정 과정을 단순화하였습니다.
+- **Vue 컴포넌트 변환**: 재사용성을 강화하기 위해 주요 UI 요소들은 Vue 컴포넌트로 변환되었으며, 이를 통해 애플리케이션의 다양한 부분에서 모듈 방식으로 활용 가능합니다.
 
-This refactored structure supports future UI adjustments without compromising the underlying framework, fostering efficient and maintainable development.
+이 새롭게 구성된 구조는 기본적인 프레임워크를 유지하면서 미래 UI 조정이 가능하도록 지원하며, 효율적이고 유지 가능한 개발 환경을 제공합니다.
 
-### Key Considerations
-- **Large-scale Web Systems**: The framework should be suitable for applications with complex requirements and high user demand.
-- **Diverse Developer Levels**: Designed to be approachable by both beginner and experienced developers, the framework prioritizes ease of use and flexibility.
-- **Learning Curve**: Minimizes the learning curve to facilitate rapid onboarding and efficient development.
-- **Common Component Implementation and Utilization**: Includes reusable common components to streamline development across projects.
-- **Build/Deployment Performance**: Optimized for fast builds and efficient deployment processes to reduce time-to-market.
+### 주요 고려사항
+- **대규모 웹 시스템**: 복잡한 요구사항과 높은 사용자 요구를 처리할 수 있는 프레임워크를 목표로 합니다.
+- **다양한 개발자 수준**: 초보 개발자와 경험이 풍부한 개발자 모두 접근 가능하도록 설계되어 사용의 용이성과 유연성을 우선시합니다.
+- **학습 곡선**: 학습 곡선을 최소화하여 빠른 온보딩과 효율적인 개발을 가능하게 합니다.
+- **공통 컴포넌트 구현 및 활용**: 공통 컴포넌트를 포함하여 프로젝트 간 개발 과정을 간소화합니다.
+- **빌드/배포 성능**: 빠른 빌드와 효율적인 배포 프로세스를 최적화하여 시장 출시 시간을 단축합니다.
 
-## Key Technologies
+## 주요 기술
 
-### Vite Package Manager
-Vite is a fast, modern development environment and build tool for Vue-based projects. It offers:
-- Lightning-fast builds and hot module replacement (HMR).
-- Efficient dependency management that improves build performance.
-- Optimized production build with tree-shaking and code splitting.
+### Vite 패키지 매니저
+Vite는 Vue 기반 프로젝트를 위한 빠르고 현대적인 개발 환경 및 빌드 도구입니다. 주요 장점으로는 다음을 포함합니다:
+- 매우 빠른 빌드와 핫 모듈 교체(HMR).
+- 빌드 성능을 개선하는 효율적인 의존성 관리.
+- 트리쉐이킹과 코드 스플리팅이 포함된 최적화된 프로덕션 빌드.
 
-### Vue Framework
-Vue provides a reactive, component-based architecture that simplifies complex UIs and enhances interactivity:
-- A reactive core design that enables dynamic UI updates with minimal code.
-- Modular, component-based structure for reusability and maintainability.
-- Rich ecosystem and compatibility with tools like Vite, Vue Router, and Vuex, empowering seamless development for various project requirements.
+### Vue 프레임워크
+Vue는 반응형, 컴포넌트 기반 아키텍처를 제공하여 복잡한 UI를 간소화하고 상호작용을 강화합니다:
+- 최소한의 코드로 동적 UI 업데이트를 가능하게 하는 반응형 코어 설계.
+- 재사용성 및 유지관리를 위한 모듈화된 컴포넌트 기반 구조.
+- Vite, Vue Router, Vuex와 같은 도구와의 풍부한 생태계 및 호환성을 제공하여 다양한 프로젝트 요구사항에 대한 원활한 개발 환경을 지원합니다.
 
 ### Bootstrap
-Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+Bootstrap은 강력하고 기능이 풍부한 프론트엔드 툴킷으로, 프로토타입에서 프로덕션에 이르기까지 빠르게 제작할 수 있는 도구를 제공합니다.
 
-## Application Development Tools
+## 애플리케이션 개발 도구
 
-| Tool        | Purpose                                        |
-|-------------|------------------------------------------------|
-| **Node/NPM** | JavaScript runtime environment and dependency management |
-| **VS Code** | IDE for Web UI development                    |
+| 도구         | 목적                                               |
+|--------------|---------------------------------------------------|
+| **Node/NPM** | 자바스크립트 런타임 환경 및 의존성 관리             |
+| **VS Code**  | 웹 UI 개발을 위한 IDE                             |
 
-## Running the Framework
+## 프레임워크 실행 방법
 
-To set up and run the UI framework:
+UI 프레임워크를 설정하고 실행하려면 다음 절차를 따라야 합니다:
 
-1. **Install Dependencies**: Run `npm install` to install all necessary packages.
-2. **Start the Development Server**: Use `npm run dev` to launch the development server.
-3. **Access All Menus in DEV Mode**: On the login screen, click the **"노세션"** button to enter the main screen without server integration. This will display all menus regardless of server-based access permissions.
+1. **의존성 설치**: `npm install`을 실행하여 필요한 모든 패키지를 설치합니다.
+2. **개발 서버 실행**: `npm run dev`를 사용하여 개발 서버를 시작합니다.
+3. **DEV 모드에서 모든 메뉴 접근**: 로그인 화면에서 **"노세션"** 버튼을 클릭하여 서버 통합 없이 메인 화면으로 진입합니다. 이를 통해 서버 기반 접근 권한과 관계없이 모든 메뉴를 표시할 수 있습니다.
 
 ## Application Package Structure
 
