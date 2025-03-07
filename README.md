@@ -7,6 +7,12 @@
 
 - [사용자 가이드](docs/Vue_base_UI_framework-20250122.pdf)
 
+### 주요 화면 스크린샷
+<p align="center">
+  <img src="screenshot_main.png" alt="주 화면" width="800"/>
+  <img src="screenshot_detail.png" alt="상세 화면" width="800"/>
+</p>
+
 ## 재사용성을 위한 UI 프레임워크 리팩토링
 
 UI 디자인이 변경될 때마다 재사용성을 강화하기 위해 UI 프레임워크는 리팩토링 과정을 거쳤습니다. 이를 통해 공통 컴포넌트를 수정하여 새로운 디자인 요구사항에 적응하면서도 구조적 재사용이 가능하도록 하였습니다.
