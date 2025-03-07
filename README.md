@@ -9,8 +9,8 @@
 
 ### 주요 화면 스크린샷
 <p align="center">
-  <img src="screenshot_main.png" alt="주 화면" width="800"/>
-  <img src="screenshot_detail.png" alt="상세 화면" width="800"/>
+  <img src="docs/screenshot_main.png" alt="주 화면" width="800"/>
+  <img src="docs/screenshot_detail.png" alt="상세 화면" width="800"/>
 </p>
 
 ## 재사용성을 위한 UI 프레임워크 리팩토링
